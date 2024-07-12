@@ -22,7 +22,7 @@ WORKDIR /app
 COPY --from=build /app/out .
 
 # Expose the port that the application will run on
-EXPOSE 8080
+EXPOSE 5130
 
 # Set the entry point to run the application
 ENTRYPOINT ["dotnet", "LocalHost.dll"]
